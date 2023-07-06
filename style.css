@@ -1,0 +1,77 @@
+:root {
+    --col-main-bg: #ababab;
+    --col-outer-bg: #8a8a8a;
+    --col-main-text: #303030;
+    --col-link-hover: #049875;
+}
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--col-outer-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background: var(--col-main-bg);
+    width: 75%;
+    margin: auto auto;
+    height: 80vh;
+    overflow: auto;
+}
+
+.heading {
+    font-size: 36px;
+    position: fixed;
+}
+
+.img-holder {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-img {
+    height: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.main-text-col {
+    color: var(--col-main-text);
+}
+
+.recipe-list {
+    list-style-type: circle;
+}
+
+.recipe-list li {
+    font-size: 24px;
+    margin: .5rem;
+    width: max-content;
+    text-transform: uppercase;
+    border-radius: 0px;
+    transition: border-radius .25s ease-in-out;
+    box-sizing: unset;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px;
+    display: ;
+    vertical-align: middle;
+}
+
+.recipe-list li:hover {
+    background: var(--col-link-hover);
+    border-radius: 15px;
+}
